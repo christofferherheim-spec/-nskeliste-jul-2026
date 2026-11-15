@@ -49,6 +49,8 @@ Vercel publiserer det som ligger i `main`, så endringene mine må inn dit førs
 
 ## Steg 2: Lag en Vercel-konto
 
+> **Har du allerede en Vercel-konto som er koblet til GitHub?** Da hopper du over dette steget. Gå til **vercel.com**, logg inn med **Continue with GitHub**, og fortsett på steg 3.
+
 1. Gå til **vercel.com/signup**.
 2. Velg **Hobby** (gratis, til personlig bruk) og skriv inn navnet ditt.
 3. Trykk **Continue with GitHub**. Da logger du inn med GitHub-kontoen din, og Vercel får lov til å lese repoene dine.
