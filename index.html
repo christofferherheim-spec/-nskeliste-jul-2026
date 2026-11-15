@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christoffers ønskeliste – jul 2026</title>
+<meta name="description" content="Ønskelisten til Christoffer for jul 2026. Kryss av det du kjøper, så slipper vi doble gaver.">
+<meta name="theme-color" content="#1e3a2c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='13' width='22' height='15' rx='2' fill='%23c2412d'/%3E%3Crect x='3' y='8' width='26' height='6' rx='2' fill='%23d4553f'/%3E%3Crect x='14' y='8' width='4' height='20' fill='%23f4ecdf'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..800,100;1,9..144,400..800,100&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4ecdf;
+    --card: #fffcf6;
+    --ink: #221d19;
+    --muted: #776b60;
+    --line: #e6dac8;
+    --fir: #1e3a2c;
+    --fir-2: #2c5440;
+    --berry: #c2412d;
+    --gold: #d9a43b;
+    --snow: #fbf7f0;
+    --accent: var(--fir-2);
+    --tint: #eef1e9;
+    --shadow: 0 1px 2px rgba(34,29,25,.06), 0 6px 18px -6px rgba(34,29,25,.12);
+    --shadow-lift: 0 2px 4px rgba(34,29,25,.06), 0 18px 36px -12px rgba(34,29,25,.22);
+    --ease-out: cubic-bezier(.2,.8,.2,1);
+    --ease-spring: cubic-bezier(.34,1.56,.64,1);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.5 "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow-x: hidden;
+  }
+  /* Kornet papirfølelse over hele siden */
+  body::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+    opacity: .09; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  .serif { font-family: Fraunces, Georgia, serif; font-variation-settings: "SOFT" 100; }
+
+  /* ---------- Toppen ---------- */
+  .hero {
+    position: relative; overflow: hidden; isolation: isolate;
+    background:
+      radial-gradient(120% 80% at 85% 0%, rgba(217,164,59,.22), transparent 55%),
+      radial-gradient(90% 70% at 0% 100%, rgba(194,65,45,.25), transparent 60%),
+      var(--fir);
+    color: var(--snow);
+    border-radius: 0 0 32px 32px;
+    padding: 56px 0 44px;
+  }
+  .snow, .snow::before, .snow::after {
+    position: absolute; inset: -200px 0 0; z-index: -1; pointer-events: none;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.75), transparent 60%),
+      radial-gradient(1.5px 1.5px at 90px 120px, rgba(255,255,255,.6), transparent 60%),
+      radial-gradient(2.5px 2.5px at 160px 60px, rgba(255,255,255,.55), transparent 60%),
+      radial-gradient(1.5px 1.5px at 230px 170px, rgba(255,255,255,.7), transparent 60%),
+      radial-gradient(2px 2px at 300px 90px, rgba(255,255,255,.5), transparent 60%);
+    background-size: 320px 200px;
+    animation: snow 18s linear infinite;
+  }
+  .snow::before { content: ""; inset: 0; background-size: 240px 160px; animation-duration: 26s; opacity: .7; }
+  .snow::after  { content: ""; inset: 0; background-size: 420px 260px; animation-duration: 34s; opacity: .5; }
+  @keyframes snow { to { background-position: 40px 200px, -30px 200px, 20px 200px, -10px 200px, 30px 200px; } }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 18px;
+  }
+  .eyebrow::before { content: ""; width: 22px; height: 1.5px; background: currentColor; }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-variation-settings: "SOFT" 100, "opsz" 144;
+    font-weight: 700;
+    font-size: clamp(44px, 13.5vw, 112px);
+    line-height: .92;
+    letter-spacing: -.035em;
+    margin: 0;
+  }
+  h1 .line { display: block; }
+  h1 em { font-style: italic; font-weight: 500; color: #f6d48f; }
+  h1 .year {
+    display: block; margin-top: 14px;
+    font-size: .36em; font-weight: 500; letter-spacing: -.01em; color: rgba(251,247,240,.85);
+  }
+  .intro { max-width: 30em; margin: 22px 0 0; font-size: 17px; color: rgba(251,247,240,.82); }
+  .owner-banner {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 8px 14px;
+    background: rgba(251,247,240,.12); border: 1px solid rgba(251,247,240,.25);
+    color: var(--snow); border-radius: 999px; font-size: 14px; font-weight: 600;
+  }
+  .badge {
+    position: absolute; top: 18px; right: 14px; width: 92px; height: 92px; z-index: 1;
+    color: var(--gold); pointer-events: none;
+  }
+  .badge svg { width: 100%; height: 100%; overflow: visible; }
+  .badge .ring { animation: spin 22s linear infinite; transform-origin: 50% 50%; }
+  .badge .ring text { font: 700 10.5px "Instrument Sans", sans-serif; letter-spacing: .28em; text-transform: uppercase; fill: currentColor; }
+  .badge .core { fill: var(--berry); }
+  .badge .star { fill: #f6d48f; transform-origin: 50% 50%; animation: twinkle 3.2s ease-in-out infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes twinkle { 50% { transform: scale(.82) rotate(18deg); } }
+  .rise { opacity: 0; transform: translateY(18px); animation: rise .9s var(--ease-out) forwards; }
+  .rise:nth-child(2) { animation-delay: .08s; } .rise:nth-child(3) { animation-delay: .16s; } .rise:nth-child(4) { animation-delay: .24s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  /* ---------- Kategori-piller ---------- */
+  .pills {
+    position: sticky; top: 0; z-index: 20;
+    padding: 12px 0;
+    background: color-mix(in srgb, var(--paper) 82%, transparent);
+    -webkit-backdrop-filter: blur(12px) saturate(1.4); backdrop-filter: blur(12px) saturate(1.4);
+  }
+  .pills .wrap { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+  .pills .wrap::-webkit-scrollbar { display: none; }
+  .pills a {
+    flex: none; display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px; border-radius: 999px; text-decoration: none;
+    font-size: 15px; font-weight: 600; color: var(--ink);
+    background: var(--card); border: 1px solid var(--line);
+    transition: background .25s, color .25s, border-color .25s, transform .2s var(--ease-spring);
+  }
+  .pills a:active { transform: scale(.95); }
+  .pills a .n { font-size: 12px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .pills a.active { background: var(--ink); color: var(--snow); border-color: var(--ink); }
+  .pills a.active .n { color: rgba(251,247,240,.6); }
+
+  /* ---------- Seksjoner ---------- */
+  section { margin-top: 28px; }
+  section[data-group="1"] { --accent: var(--fir-2);  --tint: #e9eee6; }
+  section[data-group="2"] { --accent: #9a4a2a;       --tint: #f2e6dc; }
+  section[data-group="3"] { --accent: #8a6420;       --tint: #f3eadb; }
+  .sec-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 16px; }
+  .sec-head .idx {
+    font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 18px; color: var(--accent);
+  }
+  h2 {
+    font-family: Fraunces, Georgia, serif; font-variation-settings: "SOFT" 100, "opsz" 72;
+    font-weight: 600; font-size: clamp(30px, 8vw, 44px); letter-spacing: -.02em; line-height: 1;
+    margin: 0; color: var(--ink);
+  }
+  .sec-head .count { margin-left: auto; font-size: 14px; color: var(--muted); white-space: nowrap; }
+
+  /* ---------- Kort ---------- */
+  .grid { display: grid; gap: 12px; }
+  .card {
+    position: relative;
+    background: var(--card);
+    border-radius: 22px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 118px minmax(0, 1fr);
+    box-shadow: var(--shadow);
+    transition: transform .35s var(--ease-out), box-shadow .35s var(--ease-out), opacity .4s;
+  }
+  .media {
+    position: relative; background: var(--tint); min-height: 132px; overflow: hidden;
+  }
+  .media img {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: contain; padding: 10px;
+    mix-blend-mode: multiply; /* hvit produktbakgrunn smelter inn i fargen */
+    filter: brightness(1.07) contrast(1.03); /* lys grå bakgrunn blir hvit */
+    transition: transform .6s var(--ease-out), filter .4s;
+  }
+  .placeholder {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    color: var(--accent); text-align: center; padding: 10px;
+    background:
+      repeating-linear-gradient(135deg, transparent 0 12px, color-mix(in srgb, var(--accent) 7%, transparent) 12px 24px),
+      var(--tint);
+  }
+  .placeholder svg { width: 34px; height: 34px; opacity: .75; }
+  .placeholder span { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
+  .fav {
+    position: absolute; top: 10px; left: 10px; z-index: 2;
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--gold); color: #3a2a08;
+    border-radius: 999px; padding: 4px 10px 4px 8px;
+    font-size: 12px; font-weight: 700; letter-spacing: .02em;
+    transform: rotate(-6deg);
+    box-shadow: 0 3px 8px -2px rgba(120,80,10,.4);
+  }
+  .fav svg { width: 13px; height: 13px; }
+  .stamp {
+    position: absolute; z-index: 3; left: 50%; top: 50%;
+    padding: 6px 12px; border: 3px solid var(--berry); border-radius: 8px;
+    color: var(--berry); background: rgba(255,252,246,.78);
+    font-family: Fraunces, Georgia, serif; font-weight: 800; font-size: 18px; letter-spacing: .14em; text-transform: uppercase;
+    transform: translate(-50%, -50%) rotate(-14deg);
+    animation: stamp .45s var(--ease-spring) both;
+    pointer-events: none;
+  }
+  @keyframes stamp {
+    from { opacity: 0; transform: translate(-50%, -50%) rotate(-14deg) scale(1.9); }
+    to   { opacity: 1; transform: translate(-50%, -50%) rotate(-14deg) scale(1); }
+  }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  h3 { font-size: 16.5px; font-weight: 650; margin: 0; line-height: 1.3; letter-spacing: -.005em; text-wrap: balance; }
+  .price { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+  .price strong {
+    font-family: Fraunces, Georgia, serif; font-variation-settings: "SOFT" 100;
+    font-weight: 700; font-size: 21px; color: var(--berry); letter-spacing: -.01em;
+  }
+  .price .pnote {
+    font-size: 12px; font-weight: 600; color: #8a2f20; background: #fbe3dc;
+    padding: 2px 8px; border-radius: 999px;
+  }
+  .price a { color: var(--muted); font-size: 15px; text-underline-offset: 3px; }
+  .meta { margin: 0; font-size: 14px; color: var(--muted); }
+  .note {
+    margin: 2px 0 0; font-family: Fraunces, Georgia, serif; font-style: italic;
+    font-size: 16px; line-height: 1.35; color: var(--accent);
+  }
+  .note::before { content: "«"; } .note::after { content: "»"; }
+  .stores { margin: 0; font-size: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .stores a {
+    display: inline-flex; align-items: center; gap: 4px; text-decoration: none; font-weight: 600;
+    color: var(--accent); padding: 4px 10px; border-radius: 999px;
+    background: var(--tint); transition: background .2s;
+  }
+  .stores a:hover { background: color-mix(in srgb, var(--accent) 16%, var(--tint)); }
+  .stores svg { width: 12px; height: 12px; }
+
+  @media (hover: hover) {
+    .card:hover { transform: translateY(-4px) rotate(-.3deg); box-shadow: var(--shadow-lift); }
+    .card:hover .media img { transform: scale(1.06) rotate(-1.5deg); }
+  }
+
+  /* ---------- Handlinger ---------- */
+  .action { margin-top: 8px; }
+  button { font: inherit; cursor: pointer; border: 0; -webkit-tap-highlight-color: transparent; }
+  .btn {
+    position: relative; width: 100%; min-height: 48px; padding: 0 18px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    border-radius: 999px; background: var(--ink); color: var(--snow);
+    font-weight: 650; font-size: 16px;
+    transition: transform .2s var(--ease-spring), background .2s;
+  }
+  .btn svg { width: 18px; height: 18px; transition: transform .35s var(--ease-spring); }
+  .btn:hover { background: var(--fir); }
+  .btn:hover svg { transform: rotate(-12deg) scale(1.15); }
+  .btn:active { transform: scale(.96); }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .btn-ghost { background: transparent; color: var(--muted); min-height: 44px; padding: 0 12px; border-radius: 999px; font-weight: 600; }
+  .link-btn {
+    background: none; padding: 6px 4px; color: var(--berry); font-weight: 650; font-size: 14px;
+    text-decoration: underline; text-underline-offset: 3px;
+  }
+  form.claim { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; animation: rise .35s var(--ease-out) both; }
+  form.claim label { font-size: 14px; color: var(--muted); }
+  form.claim .field { min-width: 0; display: flex; gap: 6px; padding: 5px; background: var(--paper); border-radius: 999px; border: 1.5px solid var(--line); transition: border-color .2s; }
+  form.claim .field:focus-within { border-color: var(--ink); }
+  form.claim input {
+    flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 0 12px;
+    border: 0; background: transparent; color: var(--ink); outline: none;
+  }
+  form.claim .field .btn { width: auto; min-height: 40px; padding: 0 16px; }
+  form.claim .btn-ghost { justify-self: start; min-height: 32px; padding: 0 6px; font-size: 14px; }
+
+  .status { font-size: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .status .tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--paper); color: var(--ink); border-radius: 999px; padding: 7px 14px; font-weight: 650;
+  }
+  .status .tag svg { width: 15px; height: 15px; }
+  .card.taken { box-shadow: none; background: color-mix(in srgb, var(--card) 70%, var(--paper)); }
+  .card.taken .body > :not(.action) { opacity: .5; }
+  .card.taken .media img { filter: grayscale(1) brightness(1.07) contrast(.9); opacity: .55; }
+  .card.taken .placeholder { opacity: .5; }
+  .card.mine .status .tag { background: #e2ecdf; color: var(--fir); }
+  .card.mine .stamp { border-color: var(--fir-2); color: var(--fir-2); }
+
+  /* ---------- Varsel og konfetti ---------- */
+  .toast {
+    position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom));
+    transform: translateX(-50%) translateY(24px) scale(.96); opacity: 0; pointer-events: none;
+    background: var(--ink); color: var(--snow); padding: 14px 20px; border-radius: 999px;
+    width: max-content; max-width: calc(100% - 32px); font-size: 15px; font-weight: 600; text-align: center;
+    box-shadow: 0 12px 30px -8px rgba(0,0,0,.35);
+    transition: opacity .3s, transform .4s var(--ease-spring); z-index: 60;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+  .confetti { position: fixed; z-index: 55; pointer-events: none; border-radius: 2px; }
+
+  /* ---------- Bunn ---------- */
+  footer { text-align: center; padding: 64px 0 56px; }
+  footer .big {
+    font-family: Fraunces, Georgia, serif; font-style: italic; font-weight: 600;
+    font-variation-settings: "SOFT" 100, "opsz" 144;
+    font-size: clamp(48px, 16vw, 120px); line-height: 1; letter-spacing: -.03em; color: var(--fir);
+  }
+  footer .big span { color: var(--berry); }
+  footer p { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
+  .loading { text-align: center; color: var(--muted); padding: 48px 0; }
+
+  /* Kort glir inn når du scroller */
+  .js-reveal .card { opacity: 0; transform: translateY(24px); }
+  .js-reveal .card.in { opacity: 1; transform: none; transition: opacity .6s var(--ease-out), transform .6s var(--ease-out), box-shadow .35s; }
+
+  /* ---------- Større skjermer: bento-rutenett ---------- */
+  @media (min-width: 640px) {
+    .hero { padding: 88px 0 64px; border-radius: 0 0 48px 48px; }
+    .badge { top: 50%; right: max(40px, calc((100vw - 1120px) / 2 + 40px)); width: 210px; height: 210px; transform: translateY(-50%); }
+    .badge .ring text { font-size: 10px; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { grid-template-columns: minmax(0, 1fr); }
+    .media { aspect-ratio: 5 / 4; min-height: 0; }
+    .media img { padding: 22px; }
+    .body { padding: 16px 18px 18px; flex: 1; }
+    .action { margin-top: auto; padding-top: 10px; }
+    .card.big { grid-column: span 2; grid-template-columns: 1.15fr minmax(0, 1fr); }
+    .card.big .media { aspect-ratio: auto; min-height: 340px; }
+    .card.big .body { padding: 28px; justify-content: center; }
+    .card.big h3 { font-size: 24px; }
+    .card.big .note { font-size: 20px; }
+    .stamp { font-size: 24px; padding: 8px 16px; }
+  }
+  @media (min-width: 960px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+    section { margin-top: 44px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .rise, .js-reveal .card { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="snow" aria-hidden="true"></div>
+  <div class="badge" aria-hidden="true">
+    <svg viewBox="0 0 100 100">
+      <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+      <g class="ring"><text><textPath href="#circ">God jul ✦ ønskeliste ✦ 2026 ✦ </textPath></text></g>
+      <circle class="core" cx="50" cy="50" r="24"/>
+      <path class="star" d="M50 35.5l3.6 7.6 8.3 1-6.1 5.7 1.6 8.2L50 54l-7.4 4 1.6-8.2-6.1-5.7 8.3-1z"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <p class="eyebrow rise">Jul 2026</p>
+    <h1 class="rise" aria-label="Christoffers ønskeliste – jul 2026">
+      <span class="line">Christoffers</span>
+      <span class="line"><em>ønskeliste</em></span>
+      <span class="year">– jul 2026</span>
+    </h1>
+    <p class="intro rise" id="intro">Trykk «Jeg kjøper denne» på det du vil gi, så ser de andre at det er tatt. Christoffer ser ikke hva som er kjøpt.</p>
+  </div>
+</header>
+<nav class="pills" id="pills" aria-label="Kategorier"><div class="wrap"></div></nav>
+<div class="wrap">
+  <main id="list"><p class="loading">Henter ønskelisten …</p></main>
+</div>
+<footer>
+  <div class="big">God jul<span>.</span></div>
+  <p>Takk for at du tenker på meg ✦</p>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  const OWNER = new URLSearchParams(location.search).get('eier') === '1';
+  const MINE_KEY = 'onskeliste:mine';   // { varerId: token }
+  const NAME_KEY = 'onskeliste:navn';
+  const POLL_MS = 15000;
+  const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const store = {
+    get(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } },
+    set(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} },
+  };
+  let mine = store.get(MINE_KEY, {});
+  let claims = {};
+  const itemsById = {};
+  const shownState = {};   // hva som sist ble tegnet i hvert kort
+  let openFormId = null;
+
+  const $list = document.getElementById('list');
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const kr = (n) => new Intl.NumberFormat('nb-NO').format(n) + ' kr';
+
+  const icon = {
+    gift: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="9" width="17" height="11.5" rx="1.5"/><path d="M2.5 9h19v-3h-19z"/><path d="M12 6v14.5"/><path d="M12 6c-1.5-3-5-3.5-5-1.5S10 6 12 6zM12 6c1.5-3 5-3.5 5-1.5S14 6 12 6z"/></svg>',
+    star: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  };
+
+  function placeholder(item) {
+    return `<div class="placeholder">${icon.gift}<span>${esc(item.links?.[0]?.store || 'Bilde mangler')}</span></div>`;
+  }
+
+  function cardHtml(item) {
+    const first = item.links?.[0];
+    const price = item.price
+      ? `<strong>${kr(item.price)}</strong>${item.priceNote ? `<span class="pnote">${esc(item.priceNote)}</span>` : ''}`
+      : (first ? `<a href="${esc(first.url)}" target="_blank" rel="noopener">Se butikken</a>` : 'Se butikken');
+    const stores = (item.links || []).map((l) =>
+      `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.store)} ${icon.arrow}</a>`).join('');
+    return `
+      <article class="card${item.favorite ? ' big' : ''}" id="item-${esc(item.id)}" data-id="${esc(item.id)}">
+        <div class="media">
+          ${item.favorite ? `<span class="fav">${icon.star} Favoritt</span>` : ''}
+          ${item.image
+            ? `<img src="${esc(item.image)}" alt="${esc(item.name)}" loading="lazy" referrerpolicy="no-referrer">`
+            : placeholder(item)}
+        </div>
+        <div class="body">
+          <h3>${esc(item.name)}</h3>
+          <p class="price">${price}</p>
+          ${item.size ? `<p class="meta">Størrelse: ${esc(item.size)}</p>` : ''}
+          ${item.note ? `<p class="note">${esc(item.note)}</p>` : ''}
+          <p class="stores">${stores}</p>
+          ${OWNER ? '' : '<div class="action"></div>'}
+        </div>
+      </article>`;
+  }
+
+  function stateOf(id) {
+    const c = claims[id];
+    if (!c) return 'free';
+    return (mine[id] ? 'mine:' : 'taken:') + c.name;
+  }
+
+  function renderAction(id, force) {
+    const card = document.getElementById('item-' + id);
+    if (!card || OWNER) return;
+    const state = stateOf(id);
+    if (!force && shownState[id] === state) return;
+    if (!force && openFormId === id && state === 'free') return; // ikke forstyrr skjemaet
+    shownState[id] = state;
+    if (openFormId === id) {
+      openFormId = null;
+      if (state.startsWith('taken:')) toast(`Beklager, denne ble nettopp tatt av ${claims[id].name}.`);
+    }
+
+    const c = claims[id];
+    const action = card.querySelector('.action');
+    card.classList.toggle('taken', !!c);
+    card.classList.toggle('mine', !!(c && mine[id]));
+
+    const media = card.querySelector('.media');
+    const oldStamp = media.querySelector('.stamp');
+    if (c && !oldStamp) media.insertAdjacentHTML('beforeend', '<span class="stamp" aria-hidden="true">Tatt</span>');
+    if (!c && oldStamp) oldStamp.remove();
+
+    if (!c) {
+      action.innerHTML = `<button class="btn" data-act="open">${icon.gift} Jeg kjøper denne</button>`;
+    } else if (mine[id]) {
+      action.innerHTML = `<div class="status"><span class="tag">${icon.check} Kjøpt av ${esc(c.name)} (deg)</span><button class="link-btn" data-act="undo">Angre</button></div>`;
+    } else {
+      action.innerHTML = `<div class="status"><span class="tag">Kjøpt av ${esc(c.name)}</span></div>`;
+    }
+  }
+
+  function renderAll(force) { Object.keys(itemsById).forEach((id) => renderAction(id, force)); }
+
+  function openForm(id) {
+    if (openFormId && openFormId !== id) renderAction(openFormId, true);
+    openFormId = id;
+    const action = document.querySelector(`#item-${CSS.escape(id)} .action`);
+    action.innerHTML = `
+      <form class="claim" autocomplete="on">
+        <label for="name-${esc(id)}">Skriv fornavnet ditt, så ser de andre hvem som kjøper</label>
+        <div class="field">
+          <input id="name-${esc(id)}" name="given-name" autocomplete="given-name" maxlength="40" required
+                 value="${esc(store.get(NAME_KEY, ''))}" placeholder="Fornavn">
+          <button class="btn" type="submit">Bekreft</button>
+        </div>
+        <button type="button" class="btn-ghost" data-act="cancel">Avbryt</button>
+      </form>`;
+    const input = action.querySelector('input');
+    input.focus({ preventScroll: true });
+    input.select();
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('show'), 4500);
+  }
+
+  function confetti(fromEl) {
+    if (REDUCED || !fromEl || !Element.prototype.animate) return;
+    const r = fromEl.getBoundingClientRect();
+    const x0 = r.left + r.width / 2, y0 = r.top + r.height / 2;
+    const colors = ['#c2412d', '#d9a43b', '#2c5440', '#f6d48f', '#e8836f'];
+    for (let i = 0; i < 36; i++) {
+      const p = document.createElement('span');
+      p.className = 'confetti';
+      const w = 6 + Math.random() * 6;
+      Object.assign(p.style, {
+        left: x0 + 'px', top: y0 + 'px', width: w + 'px', height: w * (Math.random() < .5 ? .45 : 1) + 'px',
+        background: colors[i % colors.length], borderRadius: Math.random() < .3 ? '50%' : '2px',
+      });
+      document.body.appendChild(p);
+      const angle = Math.random() * Math.PI * 2;
+      const dist = 70 + Math.random() * 110;
+      const dx = Math.cos(angle) * dist, dy = Math.sin(angle) * dist - 60;
+      p.animate([
+        { transform: 'translate(-50%,-50%) rotate(0)', opacity: 1 },
+        { transform: `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) rotate(${Math.random() * 540}deg)`, opacity: 1, offset: .55 },
+        { transform: `translate(calc(-50% + ${dx * 1.1}px), calc(-50% + ${dy + 160}px)) rotate(${Math.random() * 900}deg)`, opacity: 0 },
+      ], { duration: 1100 + Math.random() * 500, easing: 'cubic-bezier(.2,.7,.4,1)' }).onfinish = () => p.remove();
+    }
+  }
+
+  async function api(method, body) {
+    const res = await fetch('/api/claims', {
+      method,
+      headers: body ? { 'Content-Type': 'application/json' } : {},
+      body: body ? JSON.stringify(body) : undefined,
+      cache: 'no-store',
+    });
+    const data = await res.json().catch(() => ({}));
+    return { status: res.status, data };
+  }
+
+  async function refresh() {
+    if (OWNER) return;
+    try {
+      const { status, data } = await api('GET');
+      if (status !== 200) return;
+      claims = data.claims || {};
+      // Rydd bort egne avkrysninger som ikke finnes lenger
+      let changed = false;
+      for (const id of Object.keys(mine)) if (!claims[id]) { delete mine[id]; changed = true; }
+      if (changed) store.set(MINE_KEY, mine);
+      renderAll(false);
+    } catch { /* prøver igjen ved neste polling */ }
+  }
+
+  async function claim(id, name) {
+    store.set(NAME_KEY, name);
+    const btn = document.querySelector(`#item-${CSS.escape(id)} form button[type=submit]`);
+    if (btn) btn.disabled = true;
+    try {
+      const { status, data } = await api('POST', { id, name });
+      if (status === 200) {
+        confetti(btn);
+        mine[id] = data.token;
+        store.set(MINE_KEY, mine);
+        claims[id] = { name: data.name };
+        renderAction(id, true);
+        toast('Takk! Nå ser de andre at denne er tatt.');
+      } else if (status === 409) {
+        claims[id] = { name: data.name };
+        renderAction(id, true);
+        toast(`Beklager, denne ble nettopp tatt av ${data.name}.`);
+      } else {
+        toast(data.error || 'Noe gikk galt. Prøv igjen.');
+        if (btn) btn.disabled = false;
+      }
+    } catch {
+      toast('Fikk ikke kontakt. Sjekk nettet og prøv igjen.');
+      if (btn) btn.disabled = false;
+    }
+  }
+
+  async function undo(id) {
+    try {
+      const { status, data } = await api('DELETE', { id, token: mine[id] });
+      if (status === 200 || status === 403) {
+        delete mine[id];
+        store.set(MINE_KEY, mine);
+        if (status === 200) { delete claims[id]; toast('Avkrysningen er fjernet.'); }
+        else toast(data.error || 'Kunne ikke angre.');
+        renderAction(id, true);
+      } else {
+        toast(data.error || 'Noe gikk galt. Prøv igjen.');
+      }
+    } catch {
+      toast('Fikk ikke kontakt. Sjekk nettet og prøv igjen.');
+    }
+  }
+
+  $list.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-act]');
+    if (!el) return;
+    const id = el.closest('.card').dataset.id;
+    const act = el.dataset.act;
+    if (act === 'open') openForm(id);
+    if (act === 'cancel') renderAction(id, true);
+    if (act === 'undo') undo(id);
+  });
+  $list.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const id = e.target.closest('.card').dataset.id;
+    const name = e.target.querySelector('input').value.trim();
+    if (name) claim(id, name);
+  });
+  $list.addEventListener('error', (e) => {
+    if (e.target.tagName === 'IMG') {
+      const item = itemsById[e.target.closest('.card').dataset.id];
+      e.target.outerHTML = placeholder(item);
+    }
+  }, true);
+
+  // Kort glir inn ved scroll, og aktiv kategori markeres i pillene
+  function setupMotion(groups) {
+    const pills = document.querySelectorAll('#pills a');
+    if (!('IntersectionObserver' in window)) return;
+    const secObs = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        pills.forEach((p) => p.classList.toggle('active', p.getAttribute('href') === '#' + en.target.id));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section').forEach((s) => secObs.observe(s));
+
+    if (REDUCED) return;
+    document.body.classList.add('js-reveal');
+    const cardObs = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        const siblings = [...en.target.parentElement.children];
+        en.target.style.transitionDelay = (siblings.indexOf(en.target) % 3) * 70 + 'ms';
+        en.target.classList.add('in');
+        setTimeout(() => { en.target.style.transitionDelay = ''; }, 900);
+        cardObs.unobserve(en.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.card').forEach((c) => cardObs.observe(c));
+  }
+
+  const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/å/g, 'a').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  async function init() {
+    if (OWNER) {
+      document.getElementById('intro').innerHTML =
+        'Her er listen slik du sendte den.<br><span class="owner-banner">Eiervisning – avkrysninger er skjult</span>';
+    }
+    let data;
+    try {
+      data = await (await fetch('/items.json', { cache: 'no-cache' })).json();
+    } catch {
+      $list.innerHTML = '<p class="loading">Klarte ikke å hente ønskelisten. Prøv å laste siden på nytt.</p>';
+      return;
+    }
+    $list.innerHTML = data.groups.map((g, gi) => {
+      g.items.forEach((it) => { itemsById[it.id] = it; });
+      const n = g.items.length;
+      return `<section id="${slug(g.name)}" data-group="${(gi % 3) + 1}">
+        <div class="sec-head"><span class="idx">${String(gi + 1).padStart(2, '0')}</span><h2>${esc(g.name)}</h2><span class="count">${n} ${n === 1 ? 'ønske' : 'ønsker'}</span></div>
+        <div class="grid">${g.items.map(cardHtml).join('')}</div>
+      </section>`;
+    }).join('');
+    document.querySelector('#pills .wrap').innerHTML = data.groups.map((g) =>
+      `<a href="#${slug(g.name)}">${esc(g.name)} <span class="n">${g.items.length}</span></a>`).join('');
+    setupMotion(data.groups);
+
+    if (OWNER) return;
+    await refresh();
+    renderAll(false);
+    setInterval(() => { if (!document.hidden) refresh(); }, POLL_MS);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

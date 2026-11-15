@@ -1,0 +1,167 @@
+{
+  "groups": [
+    {
+      "name": "Løping",
+      "items": [
+        {
+          "id": "2undr-flow-shift-trunk-bla",
+          "name": "2UNDR Flow Shift Trunk – Blå",
+          "size": "",
+          "price": 373,
+          "links": [
+            { "store": "Løpeshop", "url": "https://www.loepeshop.no/flow-shift-trunk.html" }
+          ]
+        },
+        {
+          "id": "2undr-flow-shift-boxer-bla",
+          "name": "2UNDR Flow Shift Boxer – Blå",
+          "size": "",
+          "links": [
+            { "store": "Løpeshop", "url": "https://www.loepeshop.no/flow-shift-boxer-2u24bb-287.html" }
+          ]
+        },
+        {
+          "id": "nikelab-running-vest",
+          "name": "Nike NikeLab Running Vest",
+          "size": "",
+          "links": [
+            { "store": "Løpeshop", "url": "https://www.loepeshop.no/nike-men-s-nikelab-running-vest-io2205-010.html" }
+          ]
+        },
+        {
+          "id": "odlo-zeroweight-insulator-vest",
+          "name": "Odlo Zeroweight Insulator Vest",
+          "size": "",
+          "links": [
+            { "store": "Løpeshop", "url": "https://www.loepeshop.no/odlo-men-s-zeroweight-insulator-vest-314152-15001.html" }
+          ]
+        },
+        {
+          "id": "devold-endurance-cover-zip-lichen",
+          "name": "Devold Endurance Merino Cover Zip – Lichen",
+          "size": "",
+          "price": 1379,
+          "priceNote": "Black Week, ord. 1 899 kr",
+          "image": "https://www.fjellsport.no/assets/blobs/go-407-240-b-404a-a6475051bc.jpeg?w=600",
+          "links": [
+            { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/devold/devold-endurance-merino-cover-zip-man-lichen-FS639730" }
+          ]
+        },
+        {
+          "id": "devold-endurance-tights-night",
+          "name": "Devold Endurance Merino Tights – Night",
+          "size": "",
+          "image": "https://www.fjellsport.no/assets/blobs/go-254-170-a-287a-3a731dc388.jpeg?w=600",
+          "links": [
+            { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/devold/devold-endurance-merino-tights-man-night-FS639658" },
+            { "store": "Bull Ski & Kajakk", "url": "https://bull-ski-kajakk.no/klaer/undertoy/underdeler/devold-endurance-merino-lopebukse-herre?v=291276" }
+          ]
+        },
+        {
+          "id": "devold-endurance-headband-raw-white",
+          "name": "Devold Endurance Merino Headband – Raw White",
+          "size": "",
+          "image": "https://www.fjellsport.no/assets/blobs/go-206-950-a-010a-77323e3aad.jpeg?w=600",
+          "links": [
+            { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/devold/devold-endurance-merino-headband-raw-white-P473-2691" }
+          ]
+        },
+        {
+          "id": "devold-endurance-neck-gaiter-raw-white",
+          "name": "Devold Endurance Merino Neck Gaiter – Raw White",
+          "size": "",
+          "image": "https://www.fjellsport.no/assets/blobs/go-206-812-a-010a-289e3a41d1.jpeg?w=600",
+          "links": [
+            { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/devold/devold-endurance-merino-neck-gaiter-raw-white-P473-2001" }
+          ]
+        },
+        {
+          "id": "darn-tough-element-crew-white",
+          "name": "Darn Tough Element Crew Lightweight with Cushion – White",
+          "size": "",
+          "favorite": true,
+          "note": "Sjukt gode løpesokker med ull.",
+          "image": "https://www.fjellsport.no/assets/blobs/1118-White-2100x2100-ed61c4a2-68fc-4e50-92e9-8ec6122a285a-8264102428.jpeg?w=600",
+          "links": [
+            { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/darn-tough/darn-tough-element-crew-lightweight-with-cushion-white-470084" }
+          ]
+        },
+        {
+          "id": "cep-max-cushion-mid-cut-grey",
+          "name": "CEP Max Cushion Socks Mid Cut 2.0 – Grey",
+          "size": "",
+          "links": [
+            { "store": "Løpeshop", "url": "https://www.loepeshop.no/cep-men-s-max-cushion-hiking-socks-mid-cut-2-0-wp8cw-grey.html" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Klær og sko",
+      "items": [
+        {
+          "id": "ugg-tasman-guard-gtx-chestnut",
+          "name": "UGG Tasman Guard GTX – Chestnut",
+          "size": "",
+          "price": 2999,
+          "image": "https://scabal.no/cdn/shop/files/0cac0635-0e43-4190-bc8e-0f45aa1dc881.jpg?v=1794224779&width=800",
+          "links": [
+            { "store": "Scabal", "url": "https://scabal.no/products/13732967-tasman-guard-gtx-chestnut" }
+          ]
+        },
+        {
+          "id": "hogan-cool-allacciato-brown",
+          "name": "Hogan Cool Allacciato – Brown",
+          "size": "",
+          "price": 4400,
+          "image": "https://scabal.no/cdn/shop/files/9430769a-19f9-4ebf-939f-59cab0e60b73.jpg?v=1787651636&width=800",
+          "links": [
+            { "store": "Scabal", "url": "https://scabal.no/products/13518766-cool-allacciato-brown" }
+          ]
+        },
+        {
+          "id": "ugg-neumel-weather-hybrid-chestnut",
+          "name": "UGG Neumel Weather Hybrid – Chestnut",
+          "size": "",
+          "image": "https://scabal.no/cdn/shop/files/bb7fac6d-041d-47fc-9370-6f8f9af7d995.jpg?v=1794585183&width=800",
+          "links": [
+            { "store": "Scabal", "url": "https://scabal.no/products/13732986-neumel-weather-hybrid-chesnut" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kjøkken",
+      "items": [
+        {
+          "id": "skjaerebrett-eik-40x30x3",
+          "name": "Skjærebrett i eik, endeved 40x30x3 cm",
+          "price": 1349,
+          "favorite": true,
+          "image": "https://admin.skarpekniver.com/wp-content/uploads/2026/10/a3700ad5-8aee-4e2f-8802-095ea5f5d00b-247.jpg",
+          "links": [
+            { "store": "Skarpekniver", "url": "https://www.skarpekniver.com/skjaerebrett-40-x-30-x-3cm-endeved-staende-stav-eik" }
+          ]
+        },
+        {
+          "id": "skjaerebrett-eik-50x35x3",
+          "name": "Skjærebrett i eik, endeved 50x35x3 cm",
+          "price": 1799,
+          "image": "https://admin.skarpekniver.com/wp-content/uploads/2026/10/e9784808-e1e5-4e7e-9c40-7e895d3a8c55-247.jpg",
+          "links": [
+            { "store": "Skarpekniver", "url": "https://www.skarpekniver.com/skjaerebrett-50-x-35-x-3cm-endeved-staende-stav-eik" }
+          ]
+        },
+        {
+          "id": "skjaerebrett-ask-50x35x5",
+          "name": "Skjærebrett i ask, endeved 50x35x5 cm",
+          "price": 2299,
+          "image": "https://admin.skarpekniver.com/wp-content/uploads/2026/04/434e052a-cc7e-4c85-b608-07e61becfda7.jpg",
+          "links": [
+            { "store": "Skarpekniver", "url": "https://www.skarpekniver.com/skjaerebrett-50-x-35-x-5cm-endeved-staende-stav-ask" }
+          ]
+        }
+      ]
+    }
+  ]
+}
