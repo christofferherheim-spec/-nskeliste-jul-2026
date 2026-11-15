@@ -1,0 +1,11 @@
+{
+  "name": "onskeliste",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bilder": "node scripts/hent-bilder.mjs"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.41.0"
+  }
+}

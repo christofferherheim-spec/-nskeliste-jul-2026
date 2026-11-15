@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christoffers ønskeliste – jul 2026</title>
+<meta name="description" content="Ønskelisten til Christoffer for jul 2026. Kryss av det du kjøper, så slipper vi doble gaver.">
+<meta name="theme-color" content="#f6f1e8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='13' width='22' height='15' rx='2' fill='%239e3b2c'/%3E%3Crect x='3' y='8' width='26' height='6' rx='2' fill='%23b4483a'/%3E%3Crect x='14' y='8' width='4' height='20' fill='%23f6f1e8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f1e8;
+    --card: #fffdf9;
+    --ink: #2b2622;
+    --muted: #776c62;
+    --line: #e7ddcf;
+    --fir: #2f4a3a;
+    --fir-dark: #233a2c;
+    --berry: #9e3b2c;
+    --gold: #b8892f;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: var(--fir); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  header { padding: 36px 0 8px; text-align: center; }
+  .ornament { color: var(--berry); letter-spacing: .5em; font-size: 12px; margin-bottom: 10px; }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(28px, 7.5vw, 44px);
+    line-height: 1.1;
+    margin: 0 0 12px;
+    color: var(--fir-dark);
+    letter-spacing: -.01em;
+  }
+  .intro { color: var(--muted); max-width: 34em; margin: 0 auto; font-size: 15px; }
+  .owner-banner {
+    display: inline-block; margin-top: 14px; padding: 6px 12px;
+    background: var(--fir); color: #fff; border-radius: 999px; font-size: 14px;
+  }
+
+  section { margin-top: 32px; }
+  h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 12px;
+    color: var(--fir-dark);
+    display: flex; align-items: center; gap: 12px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .grid { display: grid; gap: 12px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    transition: opacity .3s;
+  }
+  .media { position: relative; background: #fff; min-height: 112px; }
+  .media img {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: contain; padding: 6px;
+    transition: filter .3s;
+  }
+  .placeholder {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    background: #f1ebe1; color: #a89a8a; font-size: 11px; text-align: center; padding: 8px;
+    letter-spacing: .04em; text-transform: uppercase;
+  }
+  .placeholder svg { width: 30px; height: 30px; }
+  .fav {
+    position: absolute; top: 6px; left: 6px; z-index: 1;
+    background: var(--card); color: var(--gold);
+    border-radius: 999px; padding: 2px 8px 2px 6px;
+    font-size: 12px; font-weight: 600; line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12);
+  }
+  .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  h3 { font-size: 16px; font-weight: 600; margin: 0; line-height: 1.3; }
+  .price { font-weight: 600; color: var(--berry); margin: 0; }
+  .price .pnote { display: block; font-weight: 400; color: var(--muted); font-size: 13px; }
+  .price a { color: var(--muted); font-weight: 400; font-size: 15px; }
+  .meta { margin: 0; font-size: 14px; color: var(--muted); }
+  .note { margin: 2px 0 0; font-size: 14px; font-style: italic; color: var(--ink); }
+  .stores { margin: 2px 0 0; font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+  .stores a { text-decoration: none; border-bottom: 1px solid currentColor; }
+
+  .action { margin-top: 8px; }
+  button {
+    font: inherit; cursor: pointer; border-radius: 10px; border: 0;
+    min-height: 44px; padding: 0 16px;
+  }
+  .btn { background: var(--fir); color: #fff; font-weight: 600; width: 100%; }
+  .btn:hover { background: var(--fir-dark); }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .btn-ghost { background: transparent; color: var(--muted); }
+  .link-btn {
+    background: none; border: 0; padding: 0; min-height: 0;
+    color: var(--berry); text-decoration: underline; font-size: 14px;
+  }
+  form.claim { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+  form.claim label { grid-column: 1 / -1; font-size: 14px; color: var(--muted); }
+  form.claim input {
+    font: inherit; font-size: 16px; min-height: 44px; padding: 0 12px;
+    border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink);
+    min-width: 0;
+  }
+  form.claim input:focus { outline: 2px solid var(--fir); outline-offset: 1px; }
+  form.claim .row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+
+  .status { font-size: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .status .tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #ece5da; color: var(--ink); border-radius: 999px; padding: 4px 12px; font-weight: 600;
+  }
+  .card.taken { opacity: .55; }
+  .card.taken.mine { opacity: .8; }
+  .card.taken .media img { filter: grayscale(1); }
+  .card.mine .status .tag { background: #e3ebe5; color: var(--fir-dark); }
+
+  .toast {
+    position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom));
+    transform: translateX(-50%) translateY(20px); opacity: 0; pointer-events: none;
+    background: var(--ink); color: #fff; padding: 12px 16px; border-radius: 12px;
+    width: calc(100% - 32px); max-width: 420px; font-size: 15px; text-align: center;
+    transition: opacity .25s, transform .25s; z-index: 10;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 0 48px; }
+  .loading { text-align: center; color: var(--muted); padding: 48px 0; }
+
+  @media (min-width: 640px) {
+    .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .card { grid-template-columns: 1fr; }
+    .media { aspect-ratio: 4 / 3; min-height: 0; border-bottom: 1px solid var(--line); }
+    .media img { padding: 12px; }
+    .body { padding: 14px 16px 16px; flex: 1; }
+    .action { margin-top: auto; padding-top: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="ornament" aria-hidden="true">✦ ✦ ✦</div>
+    <h1>Christoffers ønskeliste <span style="white-space:nowrap">– jul 2026</span></h1>
+    <p class="intro" id="intro">Trykk «Jeg kjøper denne» på det du vil gi, så ser de andre at det er tatt. Christoffer ser ikke hva som er kjøpt.</p>
+  </header>
+  <main id="list"><p class="loading">Henter ønskelisten …</p></main>
+  <footer>God jul ✦</footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  const OWNER = new URLSearchParams(location.search).get('eier') === '1';
+  const MINE_KEY = 'onskeliste:mine';   // { varerId: token }
+  const NAME_KEY = 'onskeliste:navn';
+  const POLL_MS = 15000;
+
+  const store = {
+    get(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } },
+    set(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} },
+  };
+  let mine = store.get(MINE_KEY, {});
+  let claims = {};
+  const itemsById = {};
+  const shownState = {};   // hva som sist ble tegnet i hvert kort
+  let openFormId = null;
+
+  const $list = document.getElementById('list');
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const kr = (n) => new Intl.NumberFormat('nb-NO').format(n) + ' kr';
+
+  const giftSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="9" width="17" height="11.5" rx="1.5"/><path d="M2.5 9h19v-3h-19z"/><path d="M12 6v14.5"/><path d="M12 6c-1.5-3-5-3.5-5-1.5S10 6 12 6zM12 6c1.5-3 5-3.5 5-1.5S14 6 12 6z"/></svg>';
+
+  function placeholder(item) {
+    return `<div class="placeholder">${giftSvg}<span>${esc(item.links?.[0]?.store || 'Bilde mangler')}</span></div>`;
+  }
+
+  function cardHtml(item) {
+    const first = item.links?.[0];
+    const price = item.price
+      ? `${kr(item.price)}${item.priceNote ? `<span class="pnote">${esc(item.priceNote)}</span>` : ''}`
+      : (first ? `<a href="${esc(first.url)}" target="_blank" rel="noopener">Se butikken</a>` : 'Se butikken');
+    const stores = (item.links || []).map((l) =>
+      `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.store)} ↗</a>`).join('');
+    return `
+      <article class="card" id="item-${esc(item.id)}" data-id="${esc(item.id)}">
+        <div class="media">
+          ${item.favorite ? '<span class="fav" title="Favoritt">★ Favoritt</span>' : ''}
+          ${item.image
+            ? `<img src="${esc(item.image)}" alt="${esc(item.name)}" loading="lazy" referrerpolicy="no-referrer">`
+            : placeholder(item)}
+        </div>
+        <div class="body">
+          <h3>${esc(item.name)}</h3>
+          <p class="price">${price}</p>
+          ${item.size ? `<p class="meta">Størrelse: ${esc(item.size)}</p>` : ''}
+          ${item.note ? `<p class="note">${esc(item.note)}</p>` : ''}
+          <p class="stores">${stores}</p>
+          ${OWNER ? '' : '<div class="action"></div>'}
+        </div>
+      </article>`;
+  }
+
+  function stateOf(id) {
+    const c = claims[id];
+    if (!c) return 'free';
+    return (mine[id] ? 'mine:' : 'taken:') + c.name;
+  }
+
+  function renderAction(id, force) {
+    const card = document.getElementById('item-' + id);
+    if (!card || OWNER) return;
+    const state = stateOf(id);
+    if (!force && shownState[id] === state) return;
+    if (!force && openFormId === id && state === 'free') return; // ikke forstyrr skjemaet
+    shownState[id] = state;
+    if (openFormId === id) {
+      openFormId = null;
+      if (state.startsWith('taken:')) toast(`Beklager, denne ble nettopp tatt av ${claims[id].name}.`);
+    }
+
+    const c = claims[id];
+    const action = card.querySelector('.action');
+    card.classList.toggle('taken', !!c);
+    card.classList.toggle('mine', !!(c && mine[id]));
+
+    if (!c) {
+      action.innerHTML = `<button class="btn" data-act="open">Jeg kjøper denne</button>`;
+    } else if (mine[id]) {
+      action.innerHTML = `<div class="status"><span class="tag">✓ Kjøpt av ${esc(c.name)} (deg)</span><button class="link-btn" data-act="undo">Angre</button></div>`;
+    } else {
+      action.innerHTML = `<div class="status"><span class="tag">Kjøpt av ${esc(c.name)}</span></div>`;
+    }
+  }
+
+  function renderAll(force) { Object.keys(itemsById).forEach((id) => renderAction(id, force)); }
+
+  function openForm(id) {
+    if (openFormId && openFormId !== id) renderAction(openFormId, true);
+    openFormId = id;
+    const action = document.querySelector(`#item-${CSS.escape(id)} .action`);
+    action.innerHTML = `
+      <form class="claim" autocomplete="on">
+        <label for="name-${esc(id)}">Fornavnet ditt, så de andre ser hvem som kjøper</label>
+        <input id="name-${esc(id)}" name="given-name" autocomplete="given-name" maxlength="40" required
+               value="${esc(store.get(NAME_KEY, ''))}" placeholder="Fornavn">
+        <button class="btn" type="submit" style="width:auto">Bekreft</button>
+        <div class="row"><span></span><button type="button" class="btn-ghost" data-act="cancel">Avbryt</button></div>
+      </form>`;
+    const input = action.querySelector('input');
+    input.focus();
+    input.select();
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('show'), 4500);
+  }
+
+  async function api(method, body) {
+    const res = await fetch('/api/claims', {
+      method,
+      headers: body ? { 'Content-Type': 'application/json' } : {},
+      body: body ? JSON.stringify(body) : undefined,
+      cache: 'no-store',
+    });
+    const data = await res.json().catch(() => ({}));
+    return { status: res.status, data };
+  }
+
+  async function refresh() {
+    if (OWNER) return;
+    try {
+      const { status, data } = await api('GET');
+      if (status !== 200) return;
+      claims = data.claims || {};
+      // Rydd bort egne avkrysninger som ikke finnes lenger
+      let changed = false;
+      for (const id of Object.keys(mine)) if (!claims[id]) { delete mine[id]; changed = true; }
+      if (changed) store.set(MINE_KEY, mine);
+      renderAll(false);
+    } catch { /* prøver igjen ved neste polling */ }
+  }
+
+  async function claim(id, name) {
+    store.set(NAME_KEY, name);
+    const btn = document.querySelector(`#item-${CSS.escape(id)} form button[type=submit]`);
+    if (btn) btn.disabled = true;
+    try {
+      const { status, data } = await api('POST', { id, name });
+      if (status === 200) {
+        mine[id] = data.token;
+        store.set(MINE_KEY, mine);
+        claims[id] = { name: data.name };
+        renderAction(id, true);
+        toast('Takk! Nå ser de andre at denne er tatt.');
+      } else if (status === 409) {
+        claims[id] = { name: data.name };
+        renderAction(id, true);
+        toast(`Beklager, denne ble nettopp tatt av ${data.name}.`);
+      } else {
+        toast(data.error || 'Noe gikk galt. Prøv igjen.');
+        if (btn) btn.disabled = false;
+      }
+    } catch {
+      toast('Fikk ikke kontakt. Sjekk nettet og prøv igjen.');
+      if (btn) btn.disabled = false;
+    }
+  }
+
+  async function undo(id) {
+    try {
+      const { status, data } = await api('DELETE', { id, token: mine[id] });
+      if (status === 200 || status === 403) {
+        delete mine[id];
+        store.set(MINE_KEY, mine);
+        if (status === 200) { delete claims[id]; toast('Avkrysningen er fjernet.'); }
+        else toast(data.error || 'Kunne ikke angre.');
+        renderAction(id, true);
+      } else {
+        toast(data.error || 'Noe gikk galt. Prøv igjen.');
+      }
+    } catch {
+      toast('Fikk ikke kontakt. Sjekk nettet og prøv igjen.');
+    }
+  }
+
+  $list.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-act]');
+    if (!el) return;
+    const id = el.closest('.card').dataset.id;
+    const act = el.dataset.act;
+    if (act === 'open') openForm(id);
+    if (act === 'cancel') renderAction(id, true);
+    if (act === 'undo') undo(id);
+  });
+  $list.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const id = e.target.closest('.card').dataset.id;
+    const name = e.target.querySelector('input').value.trim();
+    if (name) claim(id, name);
+  });
+  $list.addEventListener('error', (e) => {
+    if (e.target.tagName === 'IMG') {
+      const item = itemsById[e.target.closest('.card').dataset.id];
+      e.target.outerHTML = placeholder(item);
+    }
+  }, true);
+
+  async function init() {
+    if (OWNER) {
+      document.getElementById('intro').innerHTML =
+        'Her er listen slik du sendte den.<br><span class="owner-banner">Eiervisning – avkrysninger er skjult</span>';
+    }
+    try {
+      const data = await (await fetch('/items.json', { cache: 'no-cache' })).json();
+      $list.innerHTML = data.groups.map((g) => {
+        g.items.forEach((it) => { itemsById[it.id] = it; });
+        return `<section><h2>${esc(g.name)}</h2><div class="grid">${g.items.map(cardHtml).join('')}</div></section>`;
+      }).join('');
+    } catch {
+      $list.innerHTML = '<p class="loading">Klarte ikke å hente ønskelisten. Prøv å laste siden på nytt.</p>';
+      return;
+    }
+    if (OWNER) return;
+    await refresh();
+    renderAll(false);
+    setInterval(() => { if (!document.hidden) refresh(); }, POLL_MS);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
