@@ -8,16 +8,8 @@ Avkrysningene lagres i Upstash Redis. Varene ligger i `items.json`.
 
 ## Oppsett (gjøres én gang)
 
-1. **Main-branch:** Slå sammen arbeidsbranchen inn i `main` på GitHub. Vercel deployer det som ligger på `main` til produksjon.
-2. **Koble repoet i Vercel:** vercel.com → *Add New… → Project* → *Import Git Repository* → velg dette repoet.
-   Framework Preset: **Other**. La Build Command og Output Directory stå tomme. Trykk **Deploy**.
-3. **Legg til Upstash Redis:** I Vercel-prosjektet → fanen **Storage** → *Create Database* (eller *Browse Marketplace*) → **Upstash for Redis** →
-   velg region nær Norge (f.eks. Frankfurt / `eu-central-1`), gratisplanen holder → koble databasen til prosjektet for alle miljøer.
-   Vercel legger da inn `KV_REST_API_URL` og `KV_REST_API_TOKEN` som env-variabler automatisk.
-4. **Redeploy:** *Deployments* → ⋯ ved siste deploy → **Redeploy**, så funksjonen får env-variablene.
-5. **Test:** Åpne siden på telefonen, trykk «Jeg kjøper denne», og åpne siden i en annen nettleser. Varen skal vises som tatt.
-
-Etter dette deployes hver push til `main` automatisk.
+Se **[SLIK-PUBLISERER-DU.md](SLIK-PUBLISERER-DU.md)** for en steg-for-steg-guide uten fagspråk.
+Kort fortalt: merge til `main` → importer repoet i Vercel (Framework Preset: Other) → legg til Upstash for Redis under Storage → Redeploy.
 
 ## Legge til eller endre varer
 
