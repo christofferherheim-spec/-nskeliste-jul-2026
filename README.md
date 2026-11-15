@@ -5,6 +5,7 @@ Avkrysningene lagres i Upstash Redis. Varene ligger i `items.json`.
 
 - Vanlig lenke (send til andre): `https://<din-url>/`
 - Eierlenke (bruk selv, skjuler alle avkrysninger): `https://<din-url>/?eier=1`
+  Åpnes den én gang, husker nettleseren det, og avkrysningene er skjult også på den vanlige lenken. `?eier=0` slår det av igjen.
 
 ## Oppsett (gjøres én gang)
 

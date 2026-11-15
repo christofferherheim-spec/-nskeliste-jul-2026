@@ -374,7 +374,6 @@
 
 <script>
 (() => {
-  const OWNER = new URLSearchParams(location.search).get('eier') === '1';
   const MINE_KEY = 'onskeliste:mine';   // { varerId: token }
   const NAME_KEY = 'onskeliste:navn';
   const POLL_MS = 15000;
@@ -384,6 +383,19 @@
     get(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } },
     set(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} },
   };
+
+  // Eiervisning: ?eier=1 slår den på i denne nettleseren for godt, ?eier=0 slår den av.
+  // Etterpå fjernes ?eier fra adressen, så lenken i adressefeltet er den vanlige.
+  const OWNER_KEY = 'onskeliste:eier';
+  const params = new URLSearchParams(location.search);
+  if (params.get('eier') === '1') store.set(OWNER_KEY, true);
+  if (params.get('eier') === '0') { try { localStorage.removeItem(OWNER_KEY); } catch {} }
+  const OWNER = params.get('eier') === '1' || (params.get('eier') !== '0' && store.get(OWNER_KEY, false) === true);
+  if (params.has('eier')) {
+    params.delete('eier');
+    const q = params.toString();
+    history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+  }
   let mine = store.get(MINE_KEY, {});
   let claims = {};
   const itemsById = {};
@@ -646,7 +658,7 @@
   async function init() {
     if (OWNER) {
       document.getElementById('intro').innerHTML =
-        'Her er listen slik du sendte den.<br><span class="owner-banner">Eiervisning – avkrysninger er skjult</span>';
+        'Her er listen slik du sendte den.<br><span class="owner-banner">Eiervisning – avkrysninger er skjult i denne nettleseren</span>';
     }
     let data;
     try {
