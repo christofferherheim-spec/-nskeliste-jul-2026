@@ -6,7 +6,7 @@
         {
           "id": "2undr-flow-shift-trunk-bla",
           "name": "2UNDR Flow Shift Trunk – Blå",
-          "size": "",
+          "size": "M",
           "price": 373,
           "links": [
             { "store": "Løpeshop", "url": "https://www.loepeshop.no/flow-shift-trunk.html" }
@@ -15,15 +15,27 @@
         {
           "id": "2undr-flow-shift-boxer-bla",
           "name": "2UNDR Flow Shift Boxer – Blå",
-          "size": "",
+          "size": "M",
           "links": [
             { "store": "Løpeshop", "url": "https://www.loepeshop.no/flow-shift-boxer-2u24bb-287.html" }
           ]
         },
         {
+          "id": "craft-active-extreme-x-wind-boxer",
+          "name": "Craft Active Extreme X Wind Boxer – Black/Granite",
+          "size": "M",
+          "price": 412,
+          "priceNote": "ord. 549 kr",
+          "note": "Vindtett front, for kalde økter.",
+          "image": "https://www.fjellsport.no/assets/blobs/craft-men-s-active-extreme-x-wind-boxer-black-granite-3a874bfcc6.jpeg?w=600",
+          "links": [
+            { "store": "Outnorth", "url": "https://www.outnorth.com/no/varemerker/craft/craft-active-extreme-x-wind-boxer-m-black-granite" }
+          ]
+        },
+        {
           "id": "nikelab-running-vest",
           "name": "Nike NikeLab Running Vest",
-          "size": "",
+          "size": "M",
           "links": [
             { "store": "Løpeshop", "url": "https://www.loepeshop.no/nike-men-s-nikelab-running-vest-io2205-010.html" }
           ]
@@ -31,17 +43,29 @@
         {
           "id": "odlo-zeroweight-insulator-vest",
           "name": "Odlo Zeroweight Insulator Vest",
-          "size": "",
+          "size": "M",
           "links": [
             { "store": "Løpeshop", "url": "https://www.loepeshop.no/odlo-men-s-zeroweight-insulator-vest-314152-15001.html" }
           ]
         },
         {
+          "id": "salomon-bonatti-pro-jacket-black",
+          "name": "Salomon Bonatti Pro Jacket – Deep Black",
+          "size": "M",
+          "price": 2475,
+          "priceNote": "ord. 3 300 kr",
+          "note": "Ultralett vanntett løpejakke.",
+          "image": "https://www.fjellsport.no/assets/blobs/lc2769800060-1-f425e76af0.jpeg?w=600",
+          "links": [
+            { "store": "Outnorth", "url": "https://www.outnorth.com/no/varemerker/salomon/salomon-bonatti-pro-jkt-m-deep-black-FS660740" }
+          ]
+        },
+        {
           "id": "devold-endurance-cover-zip-lichen",
           "name": "Devold Endurance Merino Cover Zip – Lichen",
-          "size": "",
+          "size": "M",
           "price": 1379,
-          "priceNote": "Black Week, ord. 1 899 kr",
+          "priceNote": "ord. 1 899 kr",
           "image": "https://www.fjellsport.no/assets/blobs/go-407-240-b-404a-a6475051bc.jpeg?w=600",
           "links": [
             { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/devold/devold-endurance-merino-cover-zip-man-lichen-FS639730" }
@@ -50,7 +74,7 @@
         {
           "id": "devold-endurance-tights-night",
           "name": "Devold Endurance Merino Tights – Night",
-          "size": "",
+          "size": "M",
           "image": "https://www.fjellsport.no/assets/blobs/go-254-170-a-287a-3a731dc388.jpeg?w=600",
           "links": [
             { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/devold/devold-endurance-merino-tights-man-night-FS639658" },
@@ -78,20 +102,64 @@
         {
           "id": "darn-tough-element-crew-white",
           "name": "Darn Tough Element Crew Lightweight with Cushion – White",
-          "size": "",
+          "size": "44 (velg minste hvis 44 er på grensen)",
           "favorite": true,
-          "note": "Sjukt gode løpesokker med ull.",
+          "note": "Sjukt gode løpesokker.",
           "image": "https://www.fjellsport.no/assets/blobs/1118-White-2100x2100-ed61c4a2-68fc-4e50-92e9-8ec6122a285a-8264102428.jpeg?w=600",
           "links": [
             { "store": "Fjellsport", "url": "https://www.fjellsport.no/merker/darn-tough/darn-tough-element-crew-lightweight-with-cushion-white-470084" }
           ]
         },
         {
+          "id": "darn-tough-element-crew-gray",
+          "name": "Darn Tough Element Crew – Gray",
+          "size": "44 (velg minste hvis 44 er på grensen)",
+          "price": 335,
+          "priceNote": "ord. 419 kr",
+          "image": "https://www.fjellsport.no/assets/blobs/1118-gray-1-fe85ff5d13.png?w=600",
+          "links": [
+            { "store": "Outnorth", "url": "https://www.outnorth.com/no/varemerker/darn-tough/darn-tough-element-crew-lightweight-with-cushion-gray-FS714831" }
+          ]
+        },
+        {
+          "id": "darn-tough-pacer-micro-crew-seafoam",
+          "name": "Darn Tough Pacer Micro Crew – Seafoam",
+          "size": "44 (velg minste hvis 44 er på grensen)",
+          "price": 399,
+          "image": "https://www.fjellsport.no/assets/blobs/1041-seafoam-2-a25fd58a28.jpeg?w=600",
+          "links": [
+            { "store": "Outnorth", "url": "https://www.outnorth.com/no/varemerker/darn-tough/darn-tough-pacer-micro-crew-ultra-lightweight-with-cushion-m-seafoam-FS681006" }
+          ]
+        },
+        {
+          "id": "icebreaker-run-ultralight-crew-black",
+          "name": "Icebreaker Merino Run+ Ultralight Crew – Black/Graphite",
+          "size": "44 (velg minste hvis 44 er på grensen)",
+          "price": 194,
+          "priceNote": "ord. 259 kr",
+          "image": "https://www.fjellsport.no/assets/blobs/SS24%20Men%20Run_%20Ultralight%20Crew%20BLACK%20GRAPHITE%200A56VL%20B58%20side-6306c435dd.png?w=600",
+          "links": [
+            { "store": "Outnorth", "url": "https://www.outnorth.com/no/varemerker/icebreaker/icebreaker-men-merino-run-ultralight-crew-black-graphite-522080" }
+          ]
+        },
+        {
           "id": "cep-max-cushion-mid-cut-grey",
           "name": "CEP Max Cushion Socks Mid Cut 2.0 – Grey",
-          "size": "",
+          "size": "44 (velg minste hvis 44 er på grensen)",
           "links": [
             { "store": "Løpeshop", "url": "https://www.loepeshop.no/cep-men-s-max-cushion-hiking-socks-mid-cut-2-0-wp8cw-grey.html" }
+          ]
+        },
+        {
+          "id": "saucony-peregrine-ice-3",
+          "name": "Saucony Peregrine ICE+ 3",
+          "size": "44",
+          "price": 1305,
+          "priceNote": "ca.-pris, ord. 2 000 kr",
+          "note": "Vinterløpesko med grep på is og snø. Svart eller grå.",
+          "image": "https://cdn.pji.nu/product/standard/800/7196408.jpg",
+          "links": [
+            { "store": "Løpeshop (via Prisjakt)", "url": "https://www.prisjakt.no/product.php?p=7196408" }
           ]
         }
       ]
@@ -102,8 +170,9 @@
         {
           "id": "ugg-tasman-guard-gtx-chestnut",
           "name": "UGG Tasman Guard GTX – Chestnut",
-          "size": "",
+          "size": "44",
           "price": 2999,
+          "note": "Vanntett semsket slip-on med Gore-Tex, ullfor og Vibram-såle.",
           "image": "https://scabal.no/cdn/shop/files/0cac0635-0e43-4190-bc8e-0f45aa1dc881.jpg?v=1794224779&width=800",
           "links": [
             { "store": "Scabal", "url": "https://scabal.no/products/13732967-tasman-guard-gtx-chestnut" }
@@ -112,8 +181,9 @@
         {
           "id": "hogan-cool-allacciato-brown",
           "name": "Hogan Cool Allacciato – Brown",
-          "size": "",
+          "size": "44",
           "price": 4400,
+          "note": "Sneakers i skinn, brun.",
           "image": "https://scabal.no/cdn/shop/files/9430769a-19f9-4ebf-939f-59cab0e60b73.jpg?v=1787651636&width=800",
           "links": [
             { "store": "Scabal", "url": "https://scabal.no/products/13518766-cool-allacciato-brown" }
@@ -122,10 +192,80 @@
         {
           "id": "ugg-neumel-weather-hybrid-chestnut",
           "name": "UGG Neumel Weather Hybrid – Chestnut",
-          "size": "",
+          "size": "44",
+          "note": "Chukka i vanntett semsket skinn med ullfor. Brun med hvit såle.",
           "image": "https://scabal.no/cdn/shop/files/bb7fac6d-041d-47fc-9370-6f8f9af7d995.jpg?v=1794585183&width=800",
           "links": [
             { "store": "Scabal", "url": "https://scabal.no/products/13732986-neumel-weather-hybrid-chesnut" }
+          ]
+        },
+        {
+          "id": "devold-expedition-arctic-pro-hoodie-wheat",
+          "name": "Devold Expedition Arctic Pro Hoodie – Wheat",
+          "size": "M",
+          "price": 1299,
+          "priceNote": "Black Week, ord. 1 999 kr",
+          "note": "Varm ullhettegenser i merino og silke. Høy hals og tommelhull.",
+          "image": "https://www.getinspired.no/cdn-cgi/image/width=1000,format=jpeg/globalassets/productimages/m_de-158317b-707a_251017_fs_1.jpg?ref=332D8D1B33",
+          "links": [
+            { "store": "Get Inspired", "url": "https://www.getinspired.no/herre/klaer/ullundertoy-og-superundertoy/ullundertoy/ulltroye/devold-expedition-arctic-pro-hoodie-man-de-158317b-707a" }
+          ]
+        },
+        {
+          "id": "incotex-corduroy-slacks-forest-green",
+          "name": "Incotex Regular Fit Washed Corduroy Slacks – Forest Green",
+          "size": "33 (ca. IT 50)",
+          "price": 2959,
+          "priceNote": "ord. 3 699 kr",
+          "note": "Grønn cordbukse med pressefold.",
+          "image": "https://www.careofcarl.no/bilder/artiklar/600x600/32063211r.jpg",
+          "links": [
+            { "store": "Care of Carl", "url": "https://www.careofcarl.no/no/incotex-regular-fit-washed-corduroy-slacks-forest-green" }
+          ]
+        },
+        {
+          "id": "incotex-garment-dyed-slacks-navy",
+          "name": "Incotex Regular Fit Garment Dyed Slacks – Navy",
+          "size": "33 (ca. IT 50)",
+          "price": 3039,
+          "priceNote": "ord. 3 799 kr",
+          "note": "Mørkeblå chinos, rett passform.",
+          "image": "https://www.careofcarl.no/bilder/artiklar/600x600/32062311r.jpg",
+          "links": [
+            { "store": "Care of Carl", "url": "https://www.careofcarl.no/no/incotex-regular-fit-garment-dyed-slacks-navy-7" }
+          ]
+        },
+        {
+          "id": "hestra-remix-mitt-cork",
+          "name": "Hestra reMix Mitt – Cork/Off White",
+          "size": "9",
+          "price": 734,
+          "priceNote": "ord. 1 049 kr",
+          "note": "Skinnvotter med avtakbart ullfôr, resirkulert lær.",
+          "image": "https://www.careofcarl.no/bilder/artiklar/600x600/29875311r.jpg",
+          "links": [
+            { "store": "Care of Carl", "url": "https://www.careofcarl.no/no/hestra-remix-mitt-cork-off-white" }
+          ]
+        },
+        {
+          "id": "nike-acg-rope-de-dope-vest",
+          "name": "Nike ACG «Rope de Dope» Therma-FIT ADV Vest",
+          "size": "M",
+          "price": 1749,
+          "note": "Isolert vest fra Nike ACG.",
+          "image": "https://images.ka-yo.com/product/1300f1611/nike-acg-m-acg-rope-de-dope-therma-fit-adv-vest.jpg",
+          "links": [
+            { "store": "KA-YO", "url": "https://www.ka-yo.com/no/en/p/mens/mens-clothing/mens-vests/m-acg-rope-de-dope-therma-fit-adv-vest" }
+          ]
+        },
+        {
+          "id": "on-performance-volt-vest",
+          "name": "On Performance Volt Vest",
+          "size": "M",
+          "price": 2089,
+          "image": "https://images.ka-yo.com/product/1300f1611/on-m-performance-volt-vest.jpg",
+          "links": [
+            { "store": "KA-YO", "url": "https://www.ka-yo.com/no/en/p/mens/mens-clothing/mens-vests/m-performance-volt-vest" }
           ]
         }
       ]
@@ -138,6 +278,7 @@
           "name": "Skjærebrett i eik, endeved 40x30x3 cm",
           "price": 1349,
           "favorite": true,
+          "note": "Samme eik og tykkelse som den store, bare mindre og lettere. Denne tror jeg er best.",
           "image": "https://admin.skarpekniver.com/wp-content/uploads/2026/10/a3700ad5-8aee-4e2f-8802-095ea5f5d00b-247.jpg",
           "links": [
             { "store": "Skarpekniver", "url": "https://www.skarpekniver.com/skjaerebrett-40-x-30-x-3cm-endeved-staende-stav-eik" }
@@ -147,6 +288,7 @@
           "id": "skjaerebrett-eik-50x35x3",
           "name": "Skjærebrett i eik, endeved 50x35x3 cm",
           "price": 1799,
+          "note": "Samme fjøl i større format.",
           "image": "https://admin.skarpekniver.com/wp-content/uploads/2026/10/e9784808-e1e5-4e7e-9c40-7e895d3a8c55-247.jpg",
           "links": [
             { "store": "Skarpekniver", "url": "https://www.skarpekniver.com/skjaerebrett-50-x-35-x-3cm-endeved-staende-stav-eik" }
@@ -156,6 +298,7 @@
           "id": "skjaerebrett-ask-50x35x5",
           "name": "Skjærebrett i ask, endeved 50x35x5 cm",
           "price": 2299,
+          "note": "Tykkere og tyngre, lysere tre. Begge har blodrann.",
           "image": "https://admin.skarpekniver.com/wp-content/uploads/2026/04/434e052a-cc7e-4c85-b608-07e61becfda7.jpg",
           "links": [
             { "store": "Skarpekniver", "url": "https://www.skarpekniver.com/skjaerebrett-50-x-35-x-5cm-endeved-staende-stav-ask" }
